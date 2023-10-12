@@ -10,7 +10,7 @@ const {
 async function main() {
 
 	/// Addresses to Ignore
-	let addressesToIgnore = ["0x2c20ef3fc0248fca2dc57bcb202f2cae504a9a66"]; /// string[];
+	let addressesToIgnore = []; /// string[];
 
 	/// Uses Config.json addresses too
 	addressesToIgnore = addressesToIgnore.concat(config.config_controller.ignore.bulk_remove_deployer_role);
