@@ -46,7 +46,9 @@ async function main() {
 	let addressesRemoved = [];
 	
 	for (let i = 0; i < results.length; i++) {
-		if (!addressesToIgnore.includes(results[i].toLowerCase())) {
+		if (results[i].toLowerCase() === "0xd2c0deface000000000000000000000000000000") {
+			continue;
+		} else if (!addressesToIgnore.includes(results[i].toLowerCase())) {
 			await ConfigController.revokeRole(DEPLOYER_ROLE, results[i], {
 				nonce: nonce++
 			});
