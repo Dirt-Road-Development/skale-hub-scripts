@@ -1,0 +1,13 @@
+{
+	"active_chain": "chaos",
+	"active_network": "testnet",
+	"possible_chains": ["chaos", "calpyso", "europa", "nebula", "titan"],
+	"possible_networks": ["testnet", "mainnet"],
+	"config_controller": {
+		"ignore": {
+			"bulk_remove_deployer_role": [
+				"0xd2c0deface000000000000000000000000000000"
+			]
+		}
+	}
+}
